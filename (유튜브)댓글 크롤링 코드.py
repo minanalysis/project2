@@ -26,3 +26,5 @@ while response:
 df = pd.DataFrame(comments)
 # 엑셀(또는 csv로) 저장
 df.to_csv('results.csv', header=['comment', 'author', 'date', 'num_likes'], index=None)
+
+출처: https://untitledtblog.tistory.com/169
