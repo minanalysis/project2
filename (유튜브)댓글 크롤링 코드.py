@@ -3,8 +3,8 @@ from googleapiclient.discovery import build
 
 
 comments = list()
-api_key = 'AIzaSyDMirfFkPzFdY8wpmLcbBxFHdyY3eXDKHk'
-video_id = 'V3ZR8bBptS4'
+api_key = 'AIzaSyDMirfFkPzFdY8wpmLcbBxFHdyY3eXDKHk' #이건 내가 받은 API KEY 
+video_id = 'V3ZR8bBptS4' #유튜브 영상아이디 #예시로 내가 좋아하는 채널 아이디를 넣어둔 것.
 api_obj = build('youtube', 'v3', developerKey=api_key)
 response = api_obj.commentThreads().list(part='snippet,replies', videoId=video_id, maxResults=100).execute()
 
